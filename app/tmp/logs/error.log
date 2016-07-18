@@ -241,3 +241,430 @@ Stack Trace:
 #3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2016-07-18 21:14:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /MusicReview/css/cake.app.css
+Stack Trace:
+#0 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-18 21:53:44 Error: [MissingActionException] Action RecordsController::edit() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecordsController',
+  'action' => 'edit',
+)
+Request URL: /MusicReview/Records/edit/99
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest))
+#2 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-07-18 21:53:53 Error: [MissingActionException] Action RecordsController::edit() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecordsController',
+  'action' => 'edit',
+)
+Request URL: /MusicReview/Records/edit/99
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest))
+#2 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-07-18 22:03:13 Error: [NotFoundException] 作品が見つかりません
+Request URL: /MusicReview/Records/edit/99
+Stack Trace:
+#0 [internal function]: RecordsController->edit('99')
+#1 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RecordsController), Array)
+#2 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest))
+#4 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-18 22:03:35 Error: [NotFoundException] 作品が見つかりません
+Request URL: /MusicReview/Records/edit/
+Stack Trace:
+#0 [internal function]: RecordsController->edit()
+#1 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RecordsController), Array)
+#2 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest))
+#4 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-18 22:07:13 Error: [NotFoundException] 作品が見つかりません
+Request URL: /MusicReview/Records/edit/
+Stack Trace:
+#0 [internal function]: RecordsController->edit()
+#1 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RecordsController), Array)
+#2 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest))
+#4 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-18 22:08:26 Error: [NotFoundException] 作品が見つかりません
+Request URL: /MusicReview/Records/edit/0
+Stack Trace:
+#0 [internal function]: RecordsController->edit('0')
+#1 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RecordsController), Array)
+#2 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest))
+#4 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-18 22:10:32 Error: [NotFoundException] 作品が見つかりません
+Request URL: /MusicReview/Records/edit/
+Stack Trace:
+#0 [internal function]: RecordsController->edit()
+#1 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RecordsController), Array)
+#2 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest))
+#4 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-18 22:11:45 Error: [NotFoundException] 作品が見つかりません
+Request URL: /MusicReview/Records/View/99
+Stack Trace:
+#0 [internal function]: RecordsController->view('99')
+#1 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RecordsController), Array)
+#2 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest))
+#4 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-18 22:12:09 Error: [NotFoundException] 作品が見つかりません
+Request URL: /MusicReview/records/View/99
+Stack Trace:
+#0 [internal function]: RecordsController->view('99')
+#1 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RecordsController), Array)
+#2 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest))
+#4 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-18 22:13:58 Error: [NotFoundException] 作品が見つかりません
+Request URL: /MusicReview/records/edit/20
+Stack Trace:
+#0 [internal function]: RecordsController->edit('20')
+#1 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RecordsController), Array)
+#2 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest))
+#4 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-18 22:22:09 Error: [MissingControllerException] Controller class FilesController could not be found.
+Exception Attributes: array (
+  'class' => 'FilesController',
+  'plugin' => NULL,
+)
+Request URL: /MusicReview/files/record/photo/51mfLgxwqNL.jpg
+Stack Trace:
+#0 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-18 22:26:23 Error: [MissingControllerException] Controller class FilesController could not be found.
+Exception Attributes: array (
+  'class' => 'FilesController',
+  'plugin' => NULL,
+)
+Request URL: /MusicReview/files/record/photo/51mfLgxwqNL.jpg
+Stack Trace:
+#0 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-18 22:26:27 Error: [MissingControllerException] Controller class FilesController could not be found.
+Exception Attributes: array (
+  'class' => 'FilesController',
+  'plugin' => NULL,
+)
+Request URL: /MusicReview/files/record/photo/51mfLgxwqNL.jpg
+Stack Trace:
+#0 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-18 22:26:43 Error: [MissingControllerException] Controller class FilesController could not be found.
+Exception Attributes: array (
+  'class' => 'FilesController',
+  'plugin' => NULL,
+)
+Request URL: /MusicReview/files/record/photo/51/mfLgxwqNL.jpg
+Stack Trace:
+#0 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-18 22:36:23 Error: [MissingControllerException] Controller class FilesController could not be found.
+Exception Attributes: array (
+  'class' => 'FilesController',
+  'plugin' => NULL,
+)
+Request URL: /MusicReview/files/record/photo/51mfLgxwqNL.jpg
+Stack Trace:
+#0 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-18 22:36:26 Error: [MissingControllerException] Controller class FilesController could not be found.
+Exception Attributes: array (
+  'class' => 'FilesController',
+  'plugin' => NULL,
+)
+Request URL: /MusicReview/files/record/photo/51mfLgxwqNL.jpg
+Stack Trace:
+#0 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-18 22:54:03 Error: [MissingActionException] Action RecordsController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecordsController',
+  'action' => 'add',
+)
+Request URL: /MusicReview/records/add
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest))
+#2 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-07-18 22:54:12 Error: Fatal Error (4): syntax error, unexpected '}' in [/var/www/html/MusicReview/app/Controller/RecordsController.php, line 24]
+2016-07-18 22:54:12 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /MusicReview/records/add
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/M...', 24)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/M...', 24, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/M...', 24, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-18 22:55:07 Error: [MissingControllerException] Controller class FilesController could not be found.
+Exception Attributes: array (
+  'class' => 'FilesController',
+  'plugin' => NULL,
+)
+Request URL: /MusicReview/files/record/photo/51mfLgxwqNL.jpg
+Stack Trace:
+#0 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-19 02:02:33 Error: Fatal Error (4): syntax error, unexpected ''UnderPhpSizeLimit'' (T_CONSTANT_ENCAPSED_STRING), expecting function (T_FUNCTION) in [/var/www/html/MusicReview/app/Model/Record.php, line 21]
+2016-07-19 02:02:33 Error: [FatalErrorException] syntax error, unexpected ''UnderPhpSizeLimit'' (T_CONSTANT_ENCAPSED_STRING), expecting function (T_FUNCTION)
+Request URL: /MusicReview/records/View/1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/M...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/M...', 21, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/M...', 21, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-19 02:06:29 Error: Fatal Error (1): Call to a member function paginate() on a non-object in [/var/www/html/MusicReview/app/Controller/RecordsController.php, line 12]
+2016-07-19 02:06:29 Error: [FatalErrorException] Call to a member function paginate() on a non-object
+Request URL: /MusicReview/records/index
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/M...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/M...', 12, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/M...', 12, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-19 02:08:14 Error: Fatal Error (1): Call to a member function paginate() on a non-object in [/var/www/html/MusicReview/app/Controller/RecordsController.php, line 12]
+2016-07-19 02:08:14 Error: [FatalErrorException] Call to a member function paginate() on a non-object
+Request URL: /MusicReview/records/index
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/M...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/M...', 12, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/M...', 12, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-19 02:15:16 Error: Fatal Error (4): syntax error, unexpected '<' in [/var/www/html/MusicReview/app/View/Elements/Records/form.ctp, line 3]
+2016-07-19 02:15:16 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /MusicReview/records/edit/1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/M...', 3)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/M...', 3, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/M...', 3, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-19 02:16:24 Error: Fatal Error (4): syntax error, unexpected '<' in [/var/www/html/MusicReview/app/View/Elements/Records/form.ctp, line 2]
+2016-07-19 02:16:24 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /MusicReview/records/add
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/M...', 2)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/M...', 2, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/M...', 2, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-19 02:18:30 Error: Fatal Error (4): syntax error, unexpected '<' in [/var/www/html/MusicReview/app/View/Elements/Records/form.ctp, line 3]
+2016-07-19 02:18:30 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /MusicReview/records/add
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/M...', 3)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/M...', 3, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/M...', 3, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-19 02:21:02 Error: [MissingControllerException] Controller class FilesController could not be found.
+Exception Attributes: array (
+  'class' => 'FilesController',
+  'plugin' => NULL,
+)
+Request URL: /MusicReview/files/record/photo/%E3%82%AF%E3%83%AD%E3%83%9E%E3%83%8B%E3%83%A8%E3%83%B3%E3%82%B9%E3%82%99.jpeg
+Stack Trace:
+#0 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-19 02:21:08 Error: [MissingControllerException] Controller class FilesController could not be found.
+Exception Attributes: array (
+  'class' => 'FilesController',
+  'plugin' => NULL,
+)
+Request URL: /MusicReview/files/record/photo/%E3%82%AF%E3%83%AD%E3%83%9E%E3%83%8B%E3%83%A8%E3%83%B3%E3%82%B9%E3%82%99.jpeg
+Stack Trace:
+#0 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-19 02:21:21 Error: [MissingControllerException] Controller class FilesController could not be found.
+Exception Attributes: array (
+  'class' => 'FilesController',
+  'plugin' => NULL,
+)
+Request URL: /MusicReview/files/record/photo/%E3%82%AF%E3%83%AD%E3%83%9E%E3%83%8B%E3%83%A8%E3%83%B3%E3%82%B9%E3%82%99.jpeg
+Stack Trace:
+#0 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-19 02:32:56 Error: [MissingControllerException] Controller class FilesController could not be found.
+Exception Attributes: array (
+  'class' => 'FilesController',
+  'plugin' => NULL,
+)
+Request URL: /MusicReview/files/record/photo/%E3%82%AF%E3%83%AD%E3%83%9E%E3%83%8B%E3%83%A8%E3%83%B3%E3%82%B9%E3%82%99.jpeg
+Stack Trace:
+#0 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-19 02:44:21 Error: [MissingControllerException] Controller class FilesController could not be found.
+Exception Attributes: array (
+  'class' => 'FilesController',
+  'plugin' => NULL,
+)
+Request URL: /MusicReview/files/record/photo/no-image.jpg
+Stack Trace:
+#0 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-19 02:44:21 Error: [MissingControllerException] Controller class FilesController could not be found.
+Exception Attributes: array (
+  'class' => 'FilesController',
+  'plugin' => NULL,
+)
+Request URL: /MusicReview/files/record/photo/%E3%82%AF%E3%83%AD%E3%83%9E%E3%83%8B%E3%83%A8%E3%83%B3%E3%82%B9%E3%82%99.jpeg
+Stack Trace:
+#0 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-19 02:45:05 Error: [MissingControllerException] Controller class FilesController could not be found.
+Exception Attributes: array (
+  'class' => 'FilesController',
+  'plugin' => NULL,
+)
+Request URL: /MusicReview/files/record/record_photo/%E3%82%AF%E3%83%AD%E3%83%9E%E3%83%8B%E3%83%A8%E3%83%B3%E3%82%B9%E3%82%99.jpeg
+Stack Trace:
+#0 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-19 02:45:11 Error: [MissingControllerException] Controller class FilesController could not be found.
+Exception Attributes: array (
+  'class' => 'FilesController',
+  'plugin' => NULL,
+)
+Request URL: /MusicReview/files/record/record_photo/%E3%82%AF%E3%83%AD%E3%83%9E%E3%83%8B%E3%83%A8%E3%83%B3%E3%82%B9%E3%82%99.jpeg
+Stack Trace:
+#0 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-19 02:45:22 Error: [MissingControllerException] Controller class FilesController could not be found.
+Exception Attributes: array (
+  'class' => 'FilesController',
+  'plugin' => NULL,
+)
+Request URL: /MusicReview/files/record/record_photo/%E3%82%AF%E3%83%AD%E3%83%9E%E3%83%8B%E3%83%A8%E3%83%B3%E3%82%B9%E3%82%99.jpeg
+Stack Trace:
+#0 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-19 02:58:06 Error: [MissingControllerException] Controller class FilesController could not be found.
+Exception Attributes: array (
+  'class' => 'FilesController',
+  'plugin' => NULL,
+)
+Request URL: /MusicReview/files/record/record_photo/%E3%82%AF%E3%83%AD%E3%83%9E%E3%83%8B%E3%83%A8%E3%83%B3%E3%82%B9%E3%82%99.jpeg
+Stack Trace:
+#0 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-19 02:58:16 Error: [MissingControllerException] Controller class FilesController could not be found.
+Exception Attributes: array (
+  'class' => 'FilesController',
+  'plugin' => NULL,
+)
+Request URL: /MusicReview/files/record/record_photo/%E3%82%AF%E3%83%AD%E3%83%9E%E3%83%8B%E3%83%A8%E3%83%B3%E3%82%B9%E3%82%99.jpeg
+Stack Trace:
+#0 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-19 03:05:18 Error: [MissingControllerException] Controller class FilesController could not be found.
+Exception Attributes: array (
+  'class' => 'FilesController',
+  'plugin' => NULL,
+)
+Request URL: /MusicReview/files/record/record_photo/%E3%82%AF%E3%83%AD%E3%83%9E%E3%83%8B%E3%83%A8%E3%83%B3%E3%82%B9%E3%82%99.jpeg
+Stack Trace:
+#0 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-19 03:05:42 Error: [MissingControllerException] Controller class FilesController could not be found.
+Exception Attributes: array (
+  'class' => 'FilesController',
+  'plugin' => NULL,
+)
+Request URL: /MusicReview/files/record/record_photo/%E3%82%AF%E3%83%AD%E3%83%9E%E3%83%8B%E3%83%A8%E3%83%B3%E3%82%B9%E3%82%99.jpeg
+Stack Trace:
+#0 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-19 03:05:50 Error: [MissingControllerException] Controller class FilesController could not be found.
+Exception Attributes: array (
+  'class' => 'FilesController',
+  'plugin' => NULL,
+)
+Request URL: /MusicReview/files/record/record_photo/%E3%82%AF%E3%83%AD%E3%83%9E%E3%83%8B%E3%83%A8%E3%83%B3%E3%82%B9%E3%82%99.jpeg
+Stack Trace:
+#0 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-19 03:06:01 Error: [MissingControllerException] Controller class FilesController could not be found.
+Exception Attributes: array (
+  'class' => 'FilesController',
+  'plugin' => NULL,
+)
+Request URL: /MusicReview/files/record/record_photo/%E3%82%AF%E3%83%AD%E3%83%9E%E3%83%8B%E3%83%A8%E3%83%B3%E3%82%B9%E3%82%99.jpeg
+Stack Trace:
+#0 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-19 03:06:05 Error: [MissingControllerException] Controller class FilesController could not be found.
+Exception Attributes: array (
+  'class' => 'FilesController',
+  'plugin' => NULL,
+)
+Request URL: /MusicReview/files/record/record_photo/15/%E3%82%AF%E3%83%AD%E3%83%9E%E3%83%8B%E3%83%A8%E3%83%B3%E3%82%B9%E3%82%99.jpeg
+Stack Trace:
+#0 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-19 03:16:35 Error: [MissingControllerException] Controller class EditController could not be found.
+Exception Attributes: array (
+  'class' => 'EditController',
+  'plugin' => NULL,
+)
+Request URL: /MusicReview/edit/15
+Stack Trace:
+#0 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-19 03:16:39 Error: [MissingControllerException] Controller class RecordController could not be found.
+Exception Attributes: array (
+  'class' => 'RecordController',
+  'plugin' => NULL,
+)
+Request URL: /MusicReview/record/edit/15
+Stack Trace:
+#0 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-19 03:21:55 Error: [MissingControllerException] Controller class FilesController could not be found.
+Exception Attributes: array (
+  'class' => 'FilesController',
+  'plugin' => NULL,
+)
+Request URL: /MusicReview/files/record/record_photo/%E3%82%AF%E3%83%AD%E3%83%9E%E3%83%8B%E3%83%A8%E3%83%B3%E3%82%B9%E3%82%99.jpeg
+Stack Trace:
+#0 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-19 03:34:12 Error: [MissingControllerException] Controller class FilesController could not be found.
+Exception Attributes: array (
+  'class' => 'FilesController',
+  'plugin' => NULL,
+)
+Request URL: /MusicReview/files/record/record_photo/%E3%82%AF%E3%83%AD%E3%83%9E%E3%83%8B%E3%83%A8%E3%83%B3%E3%82%B9%E3%82%99.jpeg
+Stack Trace:
+#0 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

@@ -67,7 +67,7 @@ Cache::config('default', array('engine' => 'File'));
  * CakePlugin::load('DebugKit'); // Loads a single plugin named DebugKit
  */
 
-CakePlugin::load(array('DebugKit','Upload'));
+CakePlugin::load(['DebugKit','Upload']);
 
 /**
  * To prefer app translation over plugin translation, you can set
@@ -76,7 +76,6 @@ CakePlugin::load(array('DebugKit','Upload'));
  */
 
 Configure::load('appConfig.php');
-
 
 /**
  * You can attach event listeners to the request lifecycle as Dispatcher Filter. By default CakePHP bundles two filters:
@@ -109,6 +108,7 @@ CakeLog::config('debug', array(
 	'types' => array('notice', 'info', 'debug'),
 	'file' => 'debug',
 ));
+
 CakeLog::config('error', array(
 	'engine' => 'File',
 	'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),

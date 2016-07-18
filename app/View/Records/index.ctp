@@ -17,10 +17,13 @@
         <td style="width: 30%">
           <?= $this->Html->link($record['Record']['artist'], ['action' => 'View', $record['Record']['id']]) ;?>
         </td>
-        <td style="width: 30%">
-          登録日: <?= $this->Time->format($record['Record']['created'], '%Y/%m/%d'); ?>
-        </td>
       </tr>
     <?php endforeach;?>
   </tbody>
 </table>
+
+<div style="text-align: center ">
+  <?= $this->Paginator->prev('< 前へ'); ?>&nbsp;
+  <?= $this->Paginator->numbers(); ?>&nbsp;
+  <?= $this->Paginator->next('次へ >'); ?>
+</div>
