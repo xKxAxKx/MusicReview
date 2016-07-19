@@ -31,5 +31,43 @@ App::uses('Controller', 'Controller');
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
-  public $components = array('DebugKit.Toolbar','Flash');
+
+  public function beforeFilter(){
+    $this->set('currentUser', $this->Auth->user());
+  }
+
+  public $components = [
+    'DebugKit.Toolbar',
+    'Flash',
+    'Auth' => [
+      'loginAction' => [
+        'controller' => 'users',
+        'action' => 'login',
+      ],
+
+      'authenticate' => [
+        'Form' => [
+          'UserModel' => 'User',          // 認証に使うモデルを指定（デフォルト値と同じな為、省略可）
+          'fields' => [
+            'username' => 'email',
+            'password' => 'password',   // （デフォルト値と同じな為、省略可）
+          ],
+          'passwordHasher' => 'Blowfish', // パスワードがハッシュ化されている方式を指定
+        ]
+      ],
+
+      'loginRedirect' => [
+        'controller' => 'records',
+        'action' => 'index'
+      ],
+
+      'logoutRedirect' => [
+        'controller' => 'records',
+        'action' => 'index'
+      ],
+
+      'authError' => 'ログインしてください'   // ログインが必要なページにアクセスした時のメッセージ
+    ]
+  ];
+
 }

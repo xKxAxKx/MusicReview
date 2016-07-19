@@ -10,6 +10,8 @@ class Record extends AppModel{
     ]
   ];
 
+  public $hasMany =['Listen' => ['className' => 'Listen']];
+
   public $validate = [
     //edit、addのバリデーション対応
     'title' => ['rule' => ['notBlank']],

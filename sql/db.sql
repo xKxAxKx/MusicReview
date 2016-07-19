@@ -31,3 +31,25 @@ INSERT INTO `records` (`title`, `artist`, `created`, `updated`) VALUES ("ぶっ�
 -- あとでやる
 alter table records add record_photo varchar(255) DEFAULT NULL;
 alter table records add record_photo_dir varchar(255) DEFAULT NULL;
+
+
+-- ユーザテーブルの作成
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `name` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `password` varchar(100) NOT NULL,
+  `icon_photo` varchar(255) DEFAULT NULL,
+  `icon_photo_dir` varchar(255) DEFAULT NULL,
+  `created` datetime NOT NULL,
+  `updated` datetime NOT NULL
+) ENGINE=InnoDB;
+
+-- Listensテーブルの作詞絵
+CREATE TABLE `listens` (
+  `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `user_id` int(11) NOT NULL,
+  FOREIGN KEY(`user_id`) REFERENCES `users`(`id`),
+  `record_id` int(11) NOT NULL,
+  FOREIGN KEY(`record_id`) REFERENCES `records`(`id`)
+) ENGINE=InnoDB;

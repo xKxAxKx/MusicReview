@@ -5,5 +5,5 @@ class Listen extends AppModel{
     'User' => ['className' => 'User'],
     'Record' => ['className' => 'Record']
   ];
-  
+
 }

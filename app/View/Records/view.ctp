@@ -17,4 +17,16 @@
     </tr>
     </tbody>
   </table>
+  <?php if($currentUser) :?>
+    <div style="text-align:right;">
+      <?= $this->Html->link('作品を編集する', ['action' => 'edit', $record['Record']['id']]); ?>
+    </div>
+    <div style="text-align:right;">
+      <?= $this->Form->postLink(
+        '作品を削除する',
+        ['action' => 'delete', $record['Record']['id']],
+        ['confirm' => '本当に削除してよろしいですか?']
+      ); ?>
+    </div>
+  <?php endif; ?>
 </div>

@@ -23,7 +23,7 @@ class UsersController extends AppController{
     if($this->Auth->user()){
       return $this->redirect($this->Auth->redirectUrl());
     }
-    
+
     if($this->request->is('post')){
       if($this->Auth->login()){
         $this->redirect($this->Auth->redirectUrl());
@@ -68,9 +68,17 @@ class UsersController extends AppController{
     }
   }
 
-  // public function delete($id = null) {
-  //
-  // }
+  public function delete($id = null) {
+    $this->request->allowMethod('post', 'delete');
 
+    if($this->User->Delete($id)){
+      $this->Flash->success('ユーザを削除しました');
+      $this->Auth->logout($user['User']);
+    } else {
+      $this->Flash->error('ユーザを削除できませんでした');
+    }
+
+    return $this->redirect($this->Auth->redirectUrl());
+  }
 
 }

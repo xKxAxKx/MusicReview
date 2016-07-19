@@ -2,6 +2,12 @@
 
 class RecordsController extends AppController{
 
+  public function beforeFilter(){
+    parent::beforeFilter();
+
+    $this->Auth->allow('index', 'view');
+  }
+
   public $helpers = ['Record'];
 
   public $components = [
@@ -42,7 +48,22 @@ class RecordsController extends AppController{
     } else {
       $this->request->data = $this->Record->findById($id);
     }
-
   }//editここまで
+
+  public function delete($id = null){
+    if(!$this->Record->exists($id)){
+      throw new NotFoundException('作品が見つかりません');
+    }
+
+    $this->request->allowMethod('post', 'delete');
+
+    if($this->Record->Delete($id)){
+      $this->Flash->success('作品を削除しました');
+    } else {
+      $this->Flash->error('作品を削除できませんでした');
+    }
+
+    return $this->redirect(['action' => 'index']);
+  }//deleteここまで
 
 }
