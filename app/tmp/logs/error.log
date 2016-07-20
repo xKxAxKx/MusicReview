@@ -1204,3 +1204,1248 @@ Stack Trace:
 #3 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
 #4 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2016-07-19 23:44:10 Error: Fatal Error (4): syntax error, unexpected ')' in [/var/www/html/MusicReview/app/View/Records/view.ctp, line 35]
+2016-07-19 23:44:10 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /MusicReview/records/View/1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/M...', 35)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/M...', 35, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/M...', 35, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-19 23:44:25 Error: [MissingControllerException] Controller class AddController could not be found.
+Exception Attributes: array (
+  'class' => 'AddController',
+  'plugin' => NULL,
+)
+Request URL: /MusicReview/add/delete/1
+Stack Trace:
+#0 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-19 23:45:04 Error: [MissingControllerException] Controller class AddController could not be found.
+Exception Attributes: array (
+  'class' => 'AddController',
+  'plugin' => NULL,
+)
+Request URL: /MusicReview/add/delete/1
+Stack Trace:
+#0 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-19 23:45:16 Error: [MissingViewException] View file "Listens/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Listens/add.ctp',
+)
+Request URL: /MusicReview/listens/add/1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ListensController), Object(CakeRequest))
+#4 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-19 23:53:28 Error: [MissingViewException] View file "Listens/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Listens/add.ctp',
+)
+Request URL: /MusicReview/listens/add/1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ListensController), Object(CakeRequest))
+#4 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-19 23:57:13 Error: [MissingViewException] View file "Listens/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Listens/add.ctp',
+)
+Request URL: /MusicReview/listens/add/1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ListensController), Object(CakeRequest))
+#4 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-20 00:01:12 Error: [MissingViewException] View file "Listens/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Listens/add.ctp',
+)
+Request URL: /MusicReview/listens/add/1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ListensController), Object(CakeRequest))
+#4 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-20 00:18:54 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`music_review`.`listens`, CONSTRAINT `listens_ibfk_2` FOREIGN KEY (`record_id`) REFERENCES `records` (`id`))
+Request URL: /MusicReview/listens/add/record_id:1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `mu...', Array)
+#2 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(1019): DboSource->execute('INSERT INTO `mu...')
+#3 /var/www/html/MusicReview/lib/Cake/Model/Model.php(1933): DboSource->create(Object(Listen), Array, Array)
+#4 /var/www/html/MusicReview/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /var/www/html/MusicReview/app/Controller/ListensController.php(13): Model->save(Array)
+#6 [internal function]: ListensController->add()
+#7 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ListensController), Array)
+#8 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ListensController), Object(CakeRequest))
+#10 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2016-07-20 00:20:36 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`music_review`.`listens`, CONSTRAINT `listens_ibfk_2` FOREIGN KEY (`record_id`) REFERENCES `records` (`id`))
+Request URL: /MusicReview/listens/add/record_id:1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `mu...', Array)
+#2 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(1019): DboSource->execute('INSERT INTO `mu...')
+#3 /var/www/html/MusicReview/lib/Cake/Model/Model.php(1933): DboSource->create(Object(Listen), Array, Array)
+#4 /var/www/html/MusicReview/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /var/www/html/MusicReview/app/Controller/ListensController.php(13): Model->save(Array)
+#6 [internal function]: ListensController->add()
+#7 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ListensController), Array)
+#8 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ListensController), Object(CakeRequest))
+#10 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2016-07-20 00:24:24 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/var/www/html/MusicReview/app/Controller/ListensController.php, line 30]
+2016-07-20 00:24:24 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /MusicReview/listens/add/record_id:1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/M...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/M...', 30, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/M...', 30, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-20 00:25:00 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`music_review`.`listens`, CONSTRAINT `listens_ibfk_2` FOREIGN KEY (`record_id`) REFERENCES `records` (`id`))
+Request URL: /MusicReview/listens/add/record_id:1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `mu...', Array)
+#2 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(1019): DboSource->execute('INSERT INTO `mu...')
+#3 /var/www/html/MusicReview/lib/Cake/Model/Model.php(1933): DboSource->create(Object(Listen), Array, Array)
+#4 /var/www/html/MusicReview/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /var/www/html/MusicReview/app/Controller/ListensController.php(16): Model->save(Array)
+#6 [internal function]: ListensController->add()
+#7 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ListensController), Array)
+#8 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ListensController), Object(CakeRequest))
+#10 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2016-07-20 00:27:06 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'record_id' cannot be null
+Request URL: /MusicReview/listens/add/record_id:1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `mu...', Array)
+#2 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(1019): DboSource->execute('INSERT INTO `mu...')
+#3 /var/www/html/MusicReview/lib/Cake/Model/Model.php(1933): DboSource->create(Object(Listen), Array, Array)
+#4 /var/www/html/MusicReview/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /var/www/html/MusicReview/app/Controller/ListensController.php(17): Model->save(Array)
+#6 [internal function]: ListensController->add()
+#7 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ListensController), Array)
+#8 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ListensController), Object(CakeRequest))
+#10 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2016-07-20 00:27:56 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'record_id' cannot be null
+Request URL: /MusicReview/listens/add/record_id:1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `mu...', Array)
+#2 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(1019): DboSource->execute('INSERT INTO `mu...')
+#3 /var/www/html/MusicReview/lib/Cake/Model/Model.php(1933): DboSource->create(Object(Listen), Array, Array)
+#4 /var/www/html/MusicReview/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /var/www/html/MusicReview/app/Controller/ListensController.php(17): Model->save(Array)
+#6 [internal function]: ListensController->add()
+#7 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ListensController), Array)
+#8 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ListensController), Object(CakeRequest))
+#10 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2016-07-20 00:29:16 Error: Fatal Error (4): syntax error, unexpected 'if' (T_IF) in [/var/www/html/MusicReview/app/Controller/ListensController.php, line 11]
+2016-07-20 00:29:16 Error: [FatalErrorException] syntax error, unexpected 'if' (T_IF)
+Request URL: /MusicReview/listens/add/record_id:1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/M...', 11)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/M...', 11, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/M...', 11, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-20 00:31:15 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'record_id' cannot be null
+Request URL: /MusicReview/listens/add/record_id:1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `mu...', Array)
+#2 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(1019): DboSource->execute('INSERT INTO `mu...')
+#3 /var/www/html/MusicReview/lib/Cake/Model/Model.php(1933): DboSource->create(Object(Listen), Array, Array)
+#4 /var/www/html/MusicReview/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /var/www/html/MusicReview/app/Controller/ListensController.php(17): Model->save(Array)
+#6 [internal function]: ListensController->add()
+#7 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ListensController), Array)
+#8 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ListensController), Object(CakeRequest))
+#10 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2016-07-20 00:31:44 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'record_id' cannot be null
+Request URL: /MusicReview/listens/add/record_id:1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `mu...', Array)
+#2 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(1019): DboSource->execute('INSERT INTO `mu...')
+#3 /var/www/html/MusicReview/lib/Cake/Model/Model.php(1933): DboSource->create(Object(Listen), Array, Array)
+#4 /var/www/html/MusicReview/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /var/www/html/MusicReview/app/Controller/ListensController.php(17): Model->save(Array)
+#6 [internal function]: ListensController->add()
+#7 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ListensController), Array)
+#8 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ListensController), Object(CakeRequest))
+#10 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2016-07-20 00:32:37 Error: Fatal Error (1): Call to a member function redirect() on a non-object in [/var/www/html/MusicReview/app/Controller/ListensController.php, line 18]
+2016-07-20 00:32:37 Error: [FatalErrorException] Call to a member function redirect() on a non-object
+Request URL: /MusicReview/listens/add/record_id:1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/M...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/M...', 18, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/M...', 18, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-20 00:34:02 Error: Fatal Error (1): Call to undefined method ListensController::return() in [/var/www/html/MusicReview/app/Controller/ListensController.php, line 18]
+2016-07-20 00:34:02 Error: [FatalErrorException] Call to undefined method ListensController::return()
+Request URL: /MusicReview/listens/add/record_id:1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/html/M...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/html/M...', 18, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/html/M...', 18, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-20 00:37:00 Error: Fatal Error (1): Call to undefined method ListensController::return() in [/var/www/html/MusicReview/app/Controller/ListensController.php, line 18]
+2016-07-20 00:37:00 Error: [FatalErrorException] Call to undefined method ListensController::return()
+Request URL: /MusicReview/listens/add/record_id:5
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/html/M...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/html/M...', 18, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/html/M...', 18, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-20 00:43:16 Error: [NotFoundException] 作品が見つかりません
+Request URL: /MusicReview/records/view
+Stack Trace:
+#0 [internal function]: RecordsController->view()
+#1 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RecordsController), Array)
+#2 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest))
+#4 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-20 01:20:35 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.record_id' in 'field list'
+Request URL: /MusicReview/records/View/2
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(1451): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(1285): DboSource->_fetchHasMany(Object(Record), 'SELECT `User`.`...', Array)
+#5 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(1144): DboSource->queryAssociation(Object(Record), Object(User), 'hasMany', 'User', Array, Array, true, Array, 0, Array)
+#6 /var/www/html/MusicReview/lib/Cake/Model/Model.php(3031): DboSource->read(Object(Record), Array)
+#7 /var/www/html/MusicReview/lib/Cake/Model/Model.php(3003): Model->_readDataSource('first', Array)
+#8 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(595): Model->find('first', Array)
+#9 /var/www/html/MusicReview/lib/Cake/Model/Model.php(827): DboSource->query('findById', Array, Object(Record))
+#10 /var/www/html/MusicReview/app/Controller/RecordsController.php(25): Model->__call('findById', Array)
+#11 /var/www/html/MusicReview/app/Controller/RecordsController.php(25): Record->findById('2')
+#12 [internal function]: RecordsController->view('2')
+#13 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RecordsController), Array)
+#14 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#15 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest))
+#16 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2016-07-20 01:21:10 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Record.user_id' in 'field list'
+Request URL: /MusicReview/users/view/5
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Record`...', Array)
+#2 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Record`...', Array, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(1451): DboSource->fetchAll('SELECT `Record`...', false)
+#4 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(1285): DboSource->_fetchHasMany(Object(User), 'SELECT `Record`...', Array)
+#5 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(1144): DboSource->queryAssociation(Object(User), Object(Record), 'hasMany', 'Record', Array, Array, true, Array, 0, Array)
+#6 /var/www/html/MusicReview/lib/Cake/Model/Model.php(3031): DboSource->read(Object(User), Array)
+#7 /var/www/html/MusicReview/lib/Cake/Model/Model.php(3003): Model->_readDataSource('first', Array)
+#8 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(595): Model->find('first', Array)
+#9 /var/www/html/MusicReview/lib/Cake/Model/Model.php(827): DboSource->query('findById', Array, Object(User))
+#10 /var/www/html/MusicReview/app/Controller/UsersController.php(17): Model->__call('findById', Array)
+#11 /var/www/html/MusicReview/app/Controller/UsersController.php(17): User->findById('5')
+#12 [internal function]: UsersController->view('5')
+#13 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#14 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#15 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#16 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2016-07-20 02:11:57 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Listen.1' in 'field list'
+Request URL: /MusicReview/listens/delete/record_id:1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Listen`...', Array)
+#2 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Listen`...', Array, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `Listen`...', false)
+#4 /var/www/html/MusicReview/lib/Cake/Model/Model.php(3031): DboSource->read(Object(Listen), Array)
+#5 /var/www/html/MusicReview/lib/Cake/Model/Model.php(3003): Model->_readDataSource('first', Array)
+#6 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(595): Model->find('first', Array)
+#7 /var/www/html/MusicReview/lib/Cake/Model/Model.php(827): DboSource->query('findByUser_IdAN...', Array, Object(Listen))
+#8 /var/www/html/MusicReview/app/Controller/ListensController.php(31): Model->__call('findByUser_IdAN...', Array)
+#9 /var/www/html/MusicReview/app/Controller/ListensController.php(31): Listen->findByUser_IdANDRecord_Id('5', '1')
+#10 [internal function]: ListensController->delete()
+#11 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ListensController), Array)
+#12 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ListensController), Object(CakeRequest))
+#14 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2016-07-20 02:12:49 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Listen.1' in 'field list'
+Request URL: /MusicReview/listens/delete/record_id:1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Listen`...', Array)
+#2 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Listen`...', Array, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `Listen`...', false)
+#4 /var/www/html/MusicReview/lib/Cake/Model/Model.php(3031): DboSource->read(Object(Listen), Array)
+#5 /var/www/html/MusicReview/lib/Cake/Model/Model.php(3003): Model->_readDataSource('first', Array)
+#6 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(595): Model->find('first', Array)
+#7 /var/www/html/MusicReview/lib/Cake/Model/Model.php(827): DboSource->query('findByUser_IdAN...', Array, Object(Listen))
+#8 /var/www/html/MusicReview/app/Controller/ListensController.php(31): Model->__call('findByUser_IdAN...', Array)
+#9 /var/www/html/MusicReview/app/Controller/ListensController.php(31): Listen->findByUser_IdANDRecord_Id('5', '1')
+#10 [internal function]: ListensController->delete()
+#11 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ListensController), Array)
+#12 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ListensController), Object(CakeRequest))
+#14 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2016-07-20 02:14:12 Error: Fatal Error (1): Call to undefined method ListensController::findByUser_IdANDRecord_Id() in [/var/www/html/MusicReview/app/Controller/ListensController.php, line 31]
+2016-07-20 02:14:12 Error: [FatalErrorException] Call to undefined method ListensController::findByUser_IdANDRecord_Id()
+Request URL: /MusicReview/listens/delete/record_id:1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/html/M...', 31)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/html/M...', 31, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/html/M...', 31, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-20 02:14:50 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /MusicReview/listens/delete/record_id:1
+Stack Trace:
+#0 /var/www/html/MusicReview/app/Controller/ListensController.php(26): CakeRequest->allowMethod('post')
+#1 [internal function]: ListensController->delete()
+#2 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ListensController), Array)
+#3 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ListensController), Object(CakeRequest))
+#5 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2016-07-20 02:15:00 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Listen.1' in 'field list'
+Request URL: /MusicReview/listens/delete/record_id:1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Listen`...', Array)
+#2 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Listen`...', Array, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `Listen`...', false)
+#4 /var/www/html/MusicReview/lib/Cake/Model/Model.php(3031): DboSource->read(Object(Listen), Array)
+#5 /var/www/html/MusicReview/lib/Cake/Model/Model.php(3003): Model->_readDataSource('first', Array)
+#6 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(595): Model->find('first', Array)
+#7 /var/www/html/MusicReview/lib/Cake/Model/Model.php(827): DboSource->query('findByUser_IdAN...', Array, Object(Listen))
+#8 /var/www/html/MusicReview/app/Controller/ListensController.php(31): Model->__call('findByUser_IdAN...', Array)
+#9 /var/www/html/MusicReview/app/Controller/ListensController.php(31): Listen->findByUser_IdANDRecord_Id('5', '1')
+#10 [internal function]: ListensController->delete()
+#11 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ListensController), Array)
+#12 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ListensController), Object(CakeRequest))
+#14 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2016-07-20 02:15:49 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Listen.user__id' in 'where clause'
+Request URL: /MusicReview/listens/delete/record_id:1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Listen`...', Array)
+#2 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Listen`...', Array, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `Listen`...', false)
+#4 /var/www/html/MusicReview/lib/Cake/Model/Model.php(3031): DboSource->read(Object(Listen), Array)
+#5 /var/www/html/MusicReview/lib/Cake/Model/Model.php(3003): Model->_readDataSource('first', Array)
+#6 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(595): Model->find('first', Array)
+#7 /var/www/html/MusicReview/lib/Cake/Model/Model.php(827): DboSource->query('findByUser_Id', Array, Object(Listen))
+#8 /var/www/html/MusicReview/app/Controller/ListensController.php(31): Model->__call('findByUser_Id', Array)
+#9 /var/www/html/MusicReview/app/Controller/ListensController.php(31): Listen->findByUser_Id('5')
+#10 [internal function]: ListensController->delete()
+#11 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ListensController), Array)
+#12 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ListensController), Object(CakeRequest))
+#14 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2016-07-20 02:21:38 Error: [MissingHelperException] Helper class userIdHelper could not be found.
+Exception Attributes: array (
+  'class' => 'userIdHelper',
+  'plugin' => false,
+)
+Request URL: /MusicReview/listens/delete/record_id:1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('userId')
+#1 /var/www/html/MusicReview/lib/Cake/View/View.php(858): HelperCollection->__isset('userId')
+#2 /var/www/html/MusicReview/app/View/Listens/delete.ctp(1): View->__get('userId')
+#3 /var/www/html/MusicReview/lib/Cake/View/View.php(971): include('/var/www/html/M...')
+#4 /var/www/html/MusicReview/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/M...', Array)
+#5 /var/www/html/MusicReview/lib/Cake/View/View.php(473): View->_render('/var/www/html/M...')
+#6 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#7 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ListensController), Object(CakeRequest))
+#9 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-07-20 02:21:51 Error: [MissingHelperException] Helper class ListenHelper could not be found.
+Exception Attributes: array (
+  'class' => 'ListenHelper',
+  'plugin' => false,
+)
+Request URL: /MusicReview/listens/delete/record_id:1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Listen')
+#1 /var/www/html/MusicReview/lib/Cake/View/View.php(858): HelperCollection->__isset('Listen')
+#2 /var/www/html/MusicReview/app/View/Listens/delete.ctp(1): View->__get('Listen')
+#3 /var/www/html/MusicReview/lib/Cake/View/View.php(971): include('/var/www/html/M...')
+#4 /var/www/html/MusicReview/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/M...', Array)
+#5 /var/www/html/MusicReview/lib/Cake/View/View.php(473): View->_render('/var/www/html/M...')
+#6 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#7 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ListensController), Object(CakeRequest))
+#9 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-07-20 04:46:42 Error: [MissingHelperException] Helper class ListenHelper could not be found.
+Exception Attributes: array (
+  'class' => 'ListenHelper',
+  'plugin' => false,
+)
+Request URL: /MusicReview/listens/delete/record_id:1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Listen')
+#1 /var/www/html/MusicReview/lib/Cake/View/View.php(858): HelperCollection->__isset('Listen')
+#2 /var/www/html/MusicReview/app/View/Listens/delete.ctp(1): View->__get('Listen')
+#3 /var/www/html/MusicReview/lib/Cake/View/View.php(971): include('/var/www/html/M...')
+#4 /var/www/html/MusicReview/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/M...', Array)
+#5 /var/www/html/MusicReview/lib/Cake/View/View.php(473): View->_render('/var/www/html/M...')
+#6 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#7 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ListensController), Object(CakeRequest))
+#9 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-07-20 04:48:03 Error: [MissingHelperException] Helper class ListenHelper could not be found.
+Exception Attributes: array (
+  'class' => 'ListenHelper',
+  'plugin' => false,
+)
+Request URL: /MusicReview/listens/delete/record_id:1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Listen')
+#1 /var/www/html/MusicReview/lib/Cake/View/View.php(858): HelperCollection->__isset('Listen')
+#2 /var/www/html/MusicReview/app/View/Listens/delete.ctp(1): View->__get('Listen')
+#3 /var/www/html/MusicReview/lib/Cake/View/View.php(971): include('/var/www/html/M...')
+#4 /var/www/html/MusicReview/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/M...', Array)
+#5 /var/www/html/MusicReview/lib/Cake/View/View.php(473): View->_render('/var/www/html/M...')
+#6 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#7 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ListensController), Object(CakeRequest))
+#9 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-07-20 04:49:27 Error: [MissingHelperException] Helper class ListenHelper could not be found.
+Exception Attributes: array (
+  'class' => 'ListenHelper',
+  'plugin' => false,
+)
+Request URL: /MusicReview/listens/delete/record_id:1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Listen')
+#1 /var/www/html/MusicReview/lib/Cake/View/View.php(858): HelperCollection->__isset('Listen')
+#2 /var/www/html/MusicReview/app/View/Listens/delete.ctp(1): View->__get('Listen')
+#3 /var/www/html/MusicReview/lib/Cake/View/View.php(971): include('/var/www/html/M...')
+#4 /var/www/html/MusicReview/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/M...', Array)
+#5 /var/www/html/MusicReview/lib/Cake/View/View.php(473): View->_render('/var/www/html/M...')
+#6 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#7 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ListensController), Object(CakeRequest))
+#9 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-07-20 04:50:11 Error: Fatal Error (1): Call to a member function getDataSource() on a non-object in [/var/www/html/MusicReview/app/Controller/ListensController.php, line 26]
+2016-07-20 04:50:11 Error: [FatalErrorException] Call to a member function getDataSource() on a non-object
+Request URL: /MusicReview/listens/delete/record_id:1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/M...', 26)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/M...', 26, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/M...', 26, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-20 04:52:31 Error: [MissingHelperException] Helper class ListenHelper could not be found.
+Exception Attributes: array (
+  'class' => 'ListenHelper',
+  'plugin' => false,
+)
+Request URL: /MusicReview/listens/delete/record_id:1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Listen')
+#1 /var/www/html/MusicReview/lib/Cake/View/View.php(858): HelperCollection->__isset('Listen')
+#2 /var/www/html/MusicReview/app/View/Listens/delete.ctp(1): View->__get('Listen')
+#3 /var/www/html/MusicReview/lib/Cake/View/View.php(971): include('/var/www/html/M...')
+#4 /var/www/html/MusicReview/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/M...', Array)
+#5 /var/www/html/MusicReview/lib/Cake/View/View.php(473): View->_render('/var/www/html/M...')
+#6 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#7 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ListensController), Object(CakeRequest))
+#9 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-07-20 04:54:25 Error: [MissingHelperException] Helper class ListenHelper could not be found.
+Exception Attributes: array (
+  'class' => 'ListenHelper',
+  'plugin' => false,
+)
+Request URL: /MusicReview/listens/delete/record_id:1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Listen')
+#1 /var/www/html/MusicReview/lib/Cake/View/View.php(858): HelperCollection->__isset('Listen')
+#2 /var/www/html/MusicReview/app/View/Listens/delete.ctp(1): View->__get('Listen')
+#3 /var/www/html/MusicReview/lib/Cake/View/View.php(971): include('/var/www/html/M...')
+#4 /var/www/html/MusicReview/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/M...', Array)
+#5 /var/www/html/MusicReview/lib/Cake/View/View.php(473): View->_render('/var/www/html/M...')
+#6 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#7 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ListensController), Object(CakeRequest))
+#9 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-07-20 05:02:00 Error: Fatal Error (1): Call to a member function DeleteAll() on a non-object in [/var/www/html/MusicReview/app/Controller/ListensController.php, line 32]
+2016-07-20 05:02:00 Error: [FatalErrorException] Call to a member function DeleteAll() on a non-object
+Request URL: /MusicReview/listens/delete/record_id:1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/M...', 32)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/M...', 32, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/M...', 32, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-20 05:04:27 Error: [MissingHelperException] Helper class ListenHelper could not be found.
+Exception Attributes: array (
+  'class' => 'ListenHelper',
+  'plugin' => false,
+)
+Request URL: /MusicReview/listens/delete/record_id:1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Listen')
+#1 /var/www/html/MusicReview/lib/Cake/View/View.php(858): HelperCollection->__isset('Listen')
+#2 /var/www/html/MusicReview/app/View/Listens/delete.ctp(1): View->__get('Listen')
+#3 /var/www/html/MusicReview/lib/Cake/View/View.php(971): include('/var/www/html/M...')
+#4 /var/www/html/MusicReview/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/M...', Array)
+#5 /var/www/html/MusicReview/lib/Cake/View/View.php(473): View->_render('/var/www/html/M...')
+#6 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#7 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ListensController), Object(CakeRequest))
+#9 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-07-20 05:28:25 Error: Fatal Error (4): syntax error, unexpected ')' in [/var/www/html/MusicReview/app/Controller/RecordsController.php, line 28]
+2016-07-20 05:28:25 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /MusicReview/records/View/7
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/M...', 28)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/M...', 28, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/M...', 28, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-20 05:29:17 Error: Fatal Error (4): syntax error, unexpected ')' in [/var/www/html/MusicReview/app/Controller/RecordsController.php, line 28]
+2016-07-20 05:29:17 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /MusicReview/records/View/7
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/M...', 28)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/M...', 28, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/M...', 28, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-20 05:29:30 Error: Fatal Error (4): syntax error, unexpected ')' in [/var/www/html/MusicReview/app/Controller/RecordsController.php, line 28]
+2016-07-20 05:29:30 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /MusicReview/records/View/7
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/M...', 28)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/M...', 28, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/M...', 28, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-20 05:29:33 Error: Fatal Error (4): syntax error, unexpected ')' in [/var/www/html/MusicReview/app/Controller/RecordsController.php, line 28]
+2016-07-20 05:29:33 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /MusicReview/records/View/7
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/M...', 28)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/M...', 28, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/M...', 28, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-20 05:30:58 Error: Fatal Error (1): Call to a member function exists() on a non-object in [/var/www/html/MusicReview/app/Controller/RecordsController.php, line 24]
+2016-07-20 05:30:58 Error: [FatalErrorException] Call to a member function exists() on a non-object
+Request URL: /MusicReview/records/View/7
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/M...', 24)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/M...', 24, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/M...', 24, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-20 05:32:04 Error: Fatal Error (1): Call to a member function exists() on a non-object in [/var/www/html/MusicReview/app/Controller/RecordsController.php, line 24]
+2016-07-20 05:32:04 Error: [FatalErrorException] Call to a member function exists() on a non-object
+Request URL: /MusicReview/records/View/7
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/M...', 24)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/M...', 24, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/M...', 24, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-20 05:33:10 Error: Fatal Error (4): syntax error, unexpected ';', expecting ']' in [/var/www/html/MusicReview/app/Model/Listen.php, line 12]
+2016-07-20 05:33:10 Error: [FatalErrorException] syntax error, unexpected ';', expecting ']'
+Request URL: /MusicReview/
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/M...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/M...', 12, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/M...', 12, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-20 05:33:25 Error: Fatal Error (4): syntax error, unexpected ';', expecting ']' in [/var/www/html/MusicReview/app/Model/Listen.php, line 12]
+2016-07-20 05:33:25 Error: [FatalErrorException] syntax error, unexpected ';', expecting ']'
+Request URL: /MusicReview/
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/M...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/M...', 12, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/M...', 12, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-20 05:33:55 Error: Fatal Error (4): syntax error, unexpected ';', expecting ']' in [/var/www/html/MusicReview/app/Model/Listen.php, line 12]
+2016-07-20 05:33:55 Error: [FatalErrorException] syntax error, unexpected ';', expecting ']'
+Request URL: /MusicReview/
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/M...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/M...', 12, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/M...', 12, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-20 05:33:59 Error: Fatal Error (4): syntax error, unexpected ';', expecting ']' in [/var/www/html/MusicReview/app/Model/Listen.php, line 12]
+2016-07-20 05:33:59 Error: [FatalErrorException] syntax error, unexpected ';', expecting ']'
+Request URL: /MusicReview/
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/M...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/M...', 12, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/M...', 12, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-20 05:35:26 Error: Fatal Error (4): syntax error, unexpected 'return' (T_RETURN), expecting function (T_FUNCTION) in [/var/www/html/MusicReview/app/Model/Listen.php, line 17]
+2016-07-20 05:35:26 Error: [FatalErrorException] syntax error, unexpected 'return' (T_RETURN), expecting function (T_FUNCTION)
+Request URL: /MusicReview/
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/M...', 17)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/M...', 17, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/M...', 17, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-20 05:52:21 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getData' at line 1
+Request URL: /MusicReview/records/view/1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('getData', Array)
+#2 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('getData', Array, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(607): DboSource->fetchAll('getData', Array, Array)
+#4 /var/www/html/MusicReview/lib/Cake/Model/Model.php(827): DboSource->query('getData', Array, Object(Listen))
+#5 /var/www/html/MusicReview/app/Controller/RecordsController.php(28): Model->__call('getData', Array)
+#6 /var/www/html/MusicReview/app/Controller/RecordsController.php(28): Listen->getData('1', '5')
+#7 [internal function]: RecordsController->view('1')
+#8 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RecordsController), Array)
+#9 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest))
+#11 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-07-20 05:55:03 Error: Fatal Error (4): syntax error, unexpected ';', expecting ']' in [/var/www/html/MusicReview/app/Model/Listen.php, line 12]
+2016-07-20 05:55:03 Error: [FatalErrorException] syntax error, unexpected ';', expecting ']'
+Request URL: /MusicReview/records/view/1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/M...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/M...', 12, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/M...', 12, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-20 05:55:46 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'shop_id' in 'where clause'
+Request URL: /MusicReview/records/view/1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Listen`...', Array)
+#2 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Listen`...', Array, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `Listen`...', false)
+#4 /var/www/html/MusicReview/lib/Cake/Model/Model.php(3031): DboSource->read(Object(Listen), Array)
+#5 /var/www/html/MusicReview/lib/Cake/Model/Model.php(3003): Model->_readDataSource('first', Array)
+#6 /var/www/html/MusicReview/app/Model/Listen.php(17): Model->find('first', Array)
+#7 /var/www/html/MusicReview/app/Controller/RecordsController.php(28): Listen->getData('1', '5')
+#8 [internal function]: RecordsController->view('1')
+#9 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RecordsController), Array)
+#10 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest))
+#12 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2016-07-20 08:54:30 Error: Fatal Error (4): syntax error, unexpected '$this' (T_VARIABLE) in [/var/www/html/MusicReview/app/Controller/RecordsController.php, line 38]
+2016-07-20 08:54:30 Error: [FatalErrorException] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /MusicReview/
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/M...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/M...', 38, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/M...', 38, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-20 08:54:44 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Listen' at line 1
+Request URL: /MusicReview/records/View/4
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('Listen', Array)
+#2 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('Listen', Array, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(607): DboSource->fetchAll('Listen', Array, Array)
+#4 /var/www/html/MusicReview/lib/Cake/Model/Model.php(827): DboSource->query('Listen', Array, Object(Record))
+#5 /var/www/html/MusicReview/app/Controller/RecordsController.php(33): Model->__call('Listen', Array)
+#6 /var/www/html/MusicReview/app/Controller/RecordsController.php(33): Record->Listen()
+#7 [internal function]: RecordsController->view('4')
+#8 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RecordsController), Array)
+#9 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest))
+#11 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-07-20 08:56:00 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Listen' at line 1
+Request URL: /MusicReview/records/View/4
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('Listen', Array)
+#2 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('Listen', Array, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(607): DboSource->fetchAll('Listen', Array, Array)
+#4 /var/www/html/MusicReview/lib/Cake/Model/Model.php(827): DboSource->query('Listen', Array, Object(Record))
+#5 /var/www/html/MusicReview/app/Controller/RecordsController.php(33): Model->__call('Listen', Array)
+#6 /var/www/html/MusicReview/app/Controller/RecordsController.php(33): Record->Listen()
+#7 [internal function]: RecordsController->view('4')
+#8 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RecordsController), Array)
+#9 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest))
+#11 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-07-20 08:56:12 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Listen' at line 1
+Request URL: /MusicReview/records/View/4
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('Listen', Array)
+#2 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('Listen', Array, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(607): DboSource->fetchAll('Listen', Array, Array)
+#4 /var/www/html/MusicReview/lib/Cake/Model/Model.php(827): DboSource->query('Listen', Array, Object(Record))
+#5 /var/www/html/MusicReview/app/Controller/RecordsController.php(33): Model->__call('Listen', Array)
+#6 /var/www/html/MusicReview/app/Controller/RecordsController.php(33): Record->Listen()
+#7 [internal function]: RecordsController->view('4')
+#8 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RecordsController), Array)
+#9 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest))
+#11 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-07-20 09:03:11 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'empty' at line 1
+Request URL: /MusicReview/records/View/4
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('empty', Array)
+#2 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('empty', Array, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(607): DboSource->fetchAll('empty', Array, Array)
+#4 /var/www/html/MusicReview/lib/Cake/Model/Model.php(827): DboSource->query('empty', Array, Object(Listen))
+#5 /var/www/html/MusicReview/app/Controller/RecordsController.php(33): Model->__call('empty', Array)
+#6 /var/www/html/MusicReview/app/Controller/RecordsController.php(33): Listen->empty()
+#7 [internal function]: RecordsController->view('4')
+#8 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RecordsController), Array)
+#9 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest))
+#11 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-07-20 09:03:21 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'empty' at line 1
+Request URL: /MusicReview/records/View/4
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('empty', Array)
+#2 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('empty', Array, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(607): DboSource->fetchAll('empty', Array, Array)
+#4 /var/www/html/MusicReview/lib/Cake/Model/Model.php(827): DboSource->query('empty', Array, Object(Listen))
+#5 /var/www/html/MusicReview/app/Controller/RecordsController.php(33): Model->__call('empty', Array)
+#6 /var/www/html/MusicReview/app/Controller/RecordsController.php(33): Listen->empty('4')
+#7 [internal function]: RecordsController->view('4')
+#8 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RecordsController), Array)
+#9 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest))
+#11 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-07-20 09:07:44 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'empty' at line 1
+Request URL: /MusicReview/records/View/5
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('empty', Array)
+#2 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('empty', Array, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(607): DboSource->fetchAll('empty', Array, Array)
+#4 /var/www/html/MusicReview/lib/Cake/Model/Model.php(827): DboSource->query('empty', Array, Object(Listen))
+#5 /var/www/html/MusicReview/app/Controller/RecordsController.php(33): Model->__call('empty', Array)
+#6 /var/www/html/MusicReview/app/Controller/RecordsController.php(33): Listen->empty()
+#7 [internal function]: RecordsController->view('5')
+#8 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RecordsController), Array)
+#9 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest))
+#11 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-07-20 09:10:46 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'empty' at line 1
+Request URL: /MusicReview/records/View/5
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('empty', Array)
+#2 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('empty', Array, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(607): DboSource->fetchAll('empty', Array, Array)
+#4 /var/www/html/MusicReview/lib/Cake/Model/Model.php(827): DboSource->query('empty', Array, Object(Listen))
+#5 /var/www/html/MusicReview/app/Controller/RecordsController.php(33): Model->__call('empty', Array)
+#6 /var/www/html/MusicReview/app/Controller/RecordsController.php(33): Listen->empty(NULL)
+#7 [internal function]: RecordsController->view('5')
+#8 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RecordsController), Array)
+#9 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest))
+#11 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-07-20 09:11:19 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'empty' at line 1
+Request URL: /MusicReview/records/View/5
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('empty', Array)
+#2 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('empty', Array, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(607): DboSource->fetchAll('empty', Array, Array)
+#4 /var/www/html/MusicReview/lib/Cake/Model/Model.php(827): DboSource->query('empty', Array, Object(Record))
+#5 /var/www/html/MusicReview/app/Controller/RecordsController.php(33): Model->__call('empty', Array)
+#6 /var/www/html/MusicReview/app/Controller/RecordsController.php(33): Record->empty(NULL)
+#7 [internal function]: RecordsController->view('5')
+#8 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RecordsController), Array)
+#9 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest))
+#11 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-07-20 09:11:26 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'empty' at line 1
+Request URL: /MusicReview/records/View/5
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('empty', Array)
+#2 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('empty', Array, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(607): DboSource->fetchAll('empty', Array, Array)
+#4 /var/www/html/MusicReview/lib/Cake/Model/Model.php(827): DboSource->query('empty', Array, Object(Record))
+#5 /var/www/html/MusicReview/app/Controller/RecordsController.php(33): Model->__call('empty', Array)
+#6 /var/www/html/MusicReview/app/Controller/RecordsController.php(33): Record->empty('5')
+#7 [internal function]: RecordsController->view('5')
+#8 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RecordsController), Array)
+#9 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest))
+#11 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-07-20 09:34:55 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'count' at line 1
+Request URL: /MusicReview/records/View/1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('count', Array)
+#2 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('count', Array, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(607): DboSource->fetchAll('count', Array, Array)
+#4 /var/www/html/MusicReview/lib/Cake/Model/Model.php(827): DboSource->query('count', Array, Object(Listen))
+#5 /var/www/html/MusicReview/app/Controller/RecordsController.php(34): Model->__call('count', Array)
+#6 /var/www/html/MusicReview/app/Controller/RecordsController.php(34): Listen->count('1')
+#7 [internal function]: RecordsController->view('1')
+#8 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RecordsController), Array)
+#9 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest))
+#11 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-07-20 09:40:56 Error: Fatal Error (4): syntax error, unexpected ':' in [/var/www/html/MusicReview/app/View/Records/view.ctp, line 46]
+2016-07-20 09:40:56 Error: [FatalErrorException] syntax error, unexpected ':'
+Request URL: /MusicReview/records/View/1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/M...', 46)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/M...', 46, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/M...', 46, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-20 09:48:19 Error: Fatal Error (4): syntax error, unexpected ')', expecting '(' in [/var/www/html/MusicReview/app/Controller/RecordsController.php, line 34]
+2016-07-20 09:48:19 Error: [FatalErrorException] syntax error, unexpected ')', expecting '('
+Request URL: /MusicReview/records/View/5
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/M...', 34)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/M...', 34, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/M...', 34, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-20 09:48:35 Error: Fatal Error (4): syntax error, unexpected ')', expecting '(' in [/var/www/html/MusicReview/app/Controller/RecordsController.php, line 34]
+2016-07-20 09:48:35 Error: [FatalErrorException] syntax error, unexpected ')', expecting '('
+Request URL: /MusicReview/records/View/5
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/M...', 34)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/M...', 34, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/M...', 34, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-20 09:49:42 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'record' at line 1
+Request URL: /MusicReview/records/View/5
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('record', Array)
+#2 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('record', Array, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(607): DboSource->fetchAll('record', Array, Array)
+#4 /var/www/html/MusicReview/lib/Cake/Model/Model.php(827): DboSource->query('record', Array, Object(Record))
+#5 /var/www/html/MusicReview/app/Controller/RecordsController.php(34): Model->__call('record', Array)
+#6 /var/www/html/MusicReview/app/Controller/RecordsController.php(34): Record->record('id')
+#7 [internal function]: RecordsController->view('5')
+#8 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RecordsController), Array)
+#9 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest))
+#11 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-07-20 10:02:00 Error: Fatal Error (4): syntax error, unexpected '[', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in [/var/www/html/MusicReview/app/Controller/RecordsController.php, line 34]
+2016-07-20 10:02:00 Error: [FatalErrorException] syntax error, unexpected '[', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+Request URL: /MusicReview/records/View/6
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/M...', 34)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/M...', 34, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/M...', 34, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-20 10:04:15 Error: Fatal Error (4): syntax error, unexpected '*' in [/var/www/html/MusicReview/app/Controller/RecordsController.php, line 34]
+2016-07-20 10:04:15 Error: [FatalErrorException] syntax error, unexpected '*'
+Request URL: /MusicReview/records/View/6
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/M...', 34)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/M...', 34, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/M...', 34, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-20 10:14:35 Error: Fatal Error (4): syntax error, unexpected '{' in [/var/www/html/MusicReview/app/Controller/RecordsController.php, line 34]
+2016-07-20 10:14:35 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /MusicReview/records/View/5
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/M...', 34)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/M...', 34, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/M...', 34, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-20 10:14:55 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/var/www/html/MusicReview/app/Controller/RecordsController.php, line 34]
+2016-07-20 10:14:55 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /MusicReview/records/View/5
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/M...', 34)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/M...', 34, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/M...', 34, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-20 10:19:44 Error: Fatal Error (64): Can't use method return value in write context in [/var/www/html/MusicReview/app/Controller/RecordsController.php, line 34]
+2016-07-20 10:19:44 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /MusicReview/records/View/5
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/var/www/html/M...', 34)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/var/www/html/M...', 34, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/var/www/html/M...', 34, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-20 10:20:00 Error: Fatal Error (64): Can't use method return value in write context in [/var/www/html/MusicReview/app/Controller/RecordsController.php, line 34]
+2016-07-20 10:20:00 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /MusicReview/records/View/5
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/var/www/html/M...', 34)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/var/www/html/M...', 34, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/var/www/html/M...', 34, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-20 13:51:21 Error: Fatal Error (4): syntax error, unexpected '{' in [/var/www/html/MusicReview/app/Controller/RecordsController.php, line 35]
+2016-07-20 13:51:21 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /MusicReview/records/View/1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/M...', 35)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/M...', 35, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/M...', 35, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-20 13:51:31 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'conditions' at line 1
+Request URL: /MusicReview/records/View/1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('conditions', Array)
+#2 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('conditions', Array, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(607): DboSource->fetchAll('conditions', Array, Array)
+#4 /var/www/html/MusicReview/lib/Cake/Model/Model.php(827): DboSource->query('conditions', Array, Object(Listen))
+#5 /var/www/html/MusicReview/app/Controller/RecordsController.php(35): Model->__call('conditions', Array)
+#6 /var/www/html/MusicReview/app/Controller/RecordsController.php(35): Listen->conditions('0')
+#7 [internal function]: RecordsController->view('1')
+#8 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RecordsController), Array)
+#9 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest))
+#11 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-07-20 14:19:17 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [/var/www/html/MusicReview/app/Controller/RecordsController.php, line 35]
+2016-07-20 14:19:17 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /MusicReview/records/View/1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/M...', 35)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/M...', 35, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/M...', 35, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-20 14:19:55 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [/var/www/html/MusicReview/app/Controller/RecordsController.php, line 35]
+2016-07-20 14:19:55 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /MusicReview/records/View/1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/M...', 35)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/M...', 35, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/M...', 35, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-20 14:22:03 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [/var/www/html/MusicReview/app/Controller/RecordsController.php, line 35]
+2016-07-20 14:22:03 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /MusicReview/records/View/1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/M...', 35)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/M...', 35, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/M...', 35, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-20 14:34:15 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Listen.recordid' in 'where clause'
+Request URL: /MusicReview/records/View/1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Listen`...', Array)
+#2 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Listen`...', Array, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `Listen`...', false)
+#4 /var/www/html/MusicReview/lib/Cake/Model/Model.php(3031): DboSource->read(Object(Listen), Array)
+#5 /var/www/html/MusicReview/lib/Cake/Model/Model.php(3003): Model->_readDataSource('first', Array)
+#6 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(595): Model->find('first', Array)
+#7 /var/www/html/MusicReview/lib/Cake/Model/Model.php(827): DboSource->query('findByrecordid', Array, Object(Listen))
+#8 /var/www/html/MusicReview/app/Controller/RecordsController.php(35): Model->__call('findByrecordid', Array)
+#9 /var/www/html/MusicReview/app/Controller/RecordsController.php(35): Listen->findByrecordid('1')
+#10 [internal function]: RecordsController->view('1')
+#11 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RecordsController), Array)
+#12 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest))
+#14 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2016-07-20 14:45:33 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.record_id' in 'field list'
+Request URL: /MusicReview/records/View/1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(1451): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(1285): DboSource->_fetchHasMany(Object(Record), 'SELECT `User`.`...', Array)
+#5 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(1144): DboSource->queryAssociation(Object(Record), Object(User), 'hasMany', 'User', Array, Array, true, Array, 0, Array)
+#6 /var/www/html/MusicReview/lib/Cake/Model/Model.php(3031): DboSource->read(Object(Record), Array)
+#7 /var/www/html/MusicReview/lib/Cake/Model/Model.php(3003): Model->_readDataSource('first', Array)
+#8 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(595): Model->find('first', Array)
+#9 /var/www/html/MusicReview/lib/Cake/Model/Model.php(827): DboSource->query('findById', Array, Object(Record))
+#10 /var/www/html/MusicReview/app/Controller/RecordsController.php(41): Model->__call('findById', Array)
+#11 /var/www/html/MusicReview/app/Controller/RecordsController.php(41): Record->findById('1')
+#12 [internal function]: RecordsController->view('1')
+#13 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RecordsController), Array)
+#14 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#15 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest))
+#16 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2016-07-20 14:46:03 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.record_id' in 'field list'
+Request URL: /MusicReview/records/View/1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(1451): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(1285): DboSource->_fetchHasMany(Object(Record), 'SELECT `User`.`...', Array)
+#5 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(1144): DboSource->queryAssociation(Object(Record), Object(User), 'hasMany', 'User', Array, Array, true, Array, 0, Array)
+#6 /var/www/html/MusicReview/lib/Cake/Model/Model.php(3031): DboSource->read(Object(Record), Array)
+#7 /var/www/html/MusicReview/lib/Cake/Model/Model.php(3003): Model->_readDataSource('first', Array)
+#8 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(595): Model->find('first', Array)
+#9 /var/www/html/MusicReview/lib/Cake/Model/Model.php(827): DboSource->query('findById', Array, Object(Record))
+#10 /var/www/html/MusicReview/app/Controller/RecordsController.php(40): Model->__call('findById', Array)
+#11 /var/www/html/MusicReview/app/Controller/RecordsController.php(40): Record->findById('1')
+#12 [internal function]: RecordsController->view('1')
+#13 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RecordsController), Array)
+#14 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#15 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest))
+#16 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2016-07-20 14:47:35 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.record_id' in 'field list'
+Request URL: /MusicReview/records/View/1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(1451): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(1285): DboSource->_fetchHasMany(Object(Record), 'SELECT `User`.`...', Array)
+#5 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(1144): DboSource->queryAssociation(Object(Record), Object(User), 'hasMany', 'User', Array, Array, true, Array, 0, Array)
+#6 /var/www/html/MusicReview/lib/Cake/Model/Model.php(3031): DboSource->read(Object(Record), Array)
+#7 /var/www/html/MusicReview/lib/Cake/Model/Model.php(3003): Model->_readDataSource('first', Array)
+#8 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(595): Model->find('first', Array)
+#9 /var/www/html/MusicReview/lib/Cake/Model/Model.php(827): DboSource->query('findById', Array, Object(Record))
+#10 /var/www/html/MusicReview/app/Controller/RecordsController.php(40): Model->__call('findById', Array)
+#11 /var/www/html/MusicReview/app/Controller/RecordsController.php(40): Record->findById('1')
+#12 [internal function]: RecordsController->view('1')
+#13 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RecordsController), Array)
+#14 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#15 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest))
+#16 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2016-07-20 14:49:04 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.record_id' in 'field list'
+Request URL: /MusicReview/records/View/1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(1451): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(1285): DboSource->_fetchHasMany(Object(Record), 'SELECT `User`.`...', Array)
+#5 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(1144): DboSource->queryAssociation(Object(Record), Object(User), 'hasMany', 'User', Array, Array, true, Array, 0, Array)
+#6 /var/www/html/MusicReview/lib/Cake/Model/Model.php(3031): DboSource->read(Object(Record), Array)
+#7 /var/www/html/MusicReview/lib/Cake/Model/Model.php(3003): Model->_readDataSource('first', Array)
+#8 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(595): Model->find('first', Array)
+#9 /var/www/html/MusicReview/lib/Cake/Model/Model.php(827): DboSource->query('findById', Array, Object(Record))
+#10 /var/www/html/MusicReview/app/Controller/RecordsController.php(40): Model->__call('findById', Array)
+#11 /var/www/html/MusicReview/app/Controller/RecordsController.php(40): Record->findById('1')
+#12 [internal function]: RecordsController->view('1')
+#13 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RecordsController), Array)
+#14 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#15 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest))
+#16 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2016-07-20 14:52:27 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.record_id' in 'on clause'
+Request URL: /MusicReview/records/View/1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/html/MusicReview/lib/Cake/Model/Model.php(3031): DboSource->read(Object(User), Array)
+#5 /var/www/html/MusicReview/lib/Cake/Model/Model.php(3003): Model->_readDataSource('first', Array)
+#6 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(595): Model->find('first', Array)
+#7 /var/www/html/MusicReview/lib/Cake/Model/Model.php(827): DboSource->query('findById', Array, Object(User))
+#8 /var/www/html/MusicReview/app/Controller/RecordsController.php(36): Model->__call('findById', Array)
+#9 /var/www/html/MusicReview/app/Controller/RecordsController.php(36): User->findById('1')
+#10 [internal function]: RecordsController->view('1')
+#11 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RecordsController), Array)
+#12 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest))
+#14 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2016-07-20 15:00:36 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.record_id' in 'on clause'
+Request URL: /MusicReview/records/View/1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/html/MusicReview/lib/Cake/Model/Model.php(3031): DboSource->read(Object(User), Array)
+#5 /var/www/html/MusicReview/lib/Cake/Model/Model.php(3003): Model->_readDataSource('first', Array)
+#6 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(595): Model->find('first', Array)
+#7 /var/www/html/MusicReview/lib/Cake/Model/Model.php(827): DboSource->query('findById', Array, Object(User))
+#8 /var/www/html/MusicReview/app/Controller/RecordsController.php(36): Model->__call('findById', Array)
+#9 /var/www/html/MusicReview/app/Controller/RecordsController.php(36): User->findById('1')
+#10 [internal function]: RecordsController->view('1')
+#11 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RecordsController), Array)
+#12 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest))
+#14 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2016-07-20 15:04:35 Error: Fatal Error (1): Call to a member function findByuser_id() on a non-object in [/var/www/html/MusicReview/app/Controller/UsersController.php, line 18]
+2016-07-20 15:04:35 Error: [FatalErrorException] Call to a member function findByuser_id() on a non-object
+Request URL: /MusicReview/users/view/5
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/M...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/M...', 18, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/M...', 18, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-20 15:06:00 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.record_id' in 'on clause'
+Request URL: /MusicReview/users/view/5
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/html/MusicReview/lib/Cake/Model/Model.php(3031): DboSource->read(Object(User), Array)
+#5 /var/www/html/MusicReview/lib/Cake/Model/Model.php(3003): Model->_readDataSource('first', Array)
+#6 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(595): Model->find('first', Array)
+#7 /var/www/html/MusicReview/lib/Cake/Model/Model.php(827): DboSource->query('findById', Array, Object(User))
+#8 /var/www/html/MusicReview/app/Controller/UsersController.php(22): Model->__call('findById', Array)
+#9 /var/www/html/MusicReview/app/Controller/UsersController.php(22): User->findById('5')
+#10 [internal function]: UsersController->view('5')
+#11 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#12 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#14 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2016-07-20 15:08:26 Error: Fatal Error (1): Call to a member function findByuser_id() on a non-object in [/var/www/html/MusicReview/app/Controller/UsersController.php, line 18]
+2016-07-20 15:08:26 Error: [FatalErrorException] Call to a member function findByuser_id() on a non-object
+Request URL: /MusicReview/users/view/5
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/M...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/M...', 18, Array)
+#2 /var/www/html/MusicReview/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/M...', 18, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-20 15:11:41 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Listen.record__id' in 'where clause'
+Request URL: /MusicReview/records/View/1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Listen`...', Array)
+#2 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Listen`...', Array, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `Listen`...', false)
+#4 /var/www/html/MusicReview/lib/Cake/Model/Model.php(3031): DboSource->read(Object(Listen), Array)
+#5 /var/www/html/MusicReview/lib/Cake/Model/Model.php(3003): Model->_readDataSource('first', Array)
+#6 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(595): Model->find('first', Array)
+#7 /var/www/html/MusicReview/lib/Cake/Model/Model.php(827): DboSource->query('findByRecord_Id', Array, Object(Listen))
+#8 /var/www/html/MusicReview/app/Controller/RecordsController.php(36): Model->__call('findByRecord_Id', Array)
+#9 /var/www/html/MusicReview/app/Controller/RecordsController.php(36): Listen->findByRecord_Id('1')
+#10 [internal function]: RecordsController->view('1')
+#11 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RecordsController), Array)
+#12 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest))
+#14 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2016-07-20 15:11:52 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Listen.record__id' in 'where clause'
+Request URL: /MusicReview/records/View/1
+Stack Trace:
+#0 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Listen`...', Array)
+#2 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Listen`...', Array, Array)
+#3 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `Listen`...', false)
+#4 /var/www/html/MusicReview/lib/Cake/Model/Model.php(3031): DboSource->read(Object(Listen), Array)
+#5 /var/www/html/MusicReview/lib/Cake/Model/Model.php(3003): Model->_readDataSource('first', Array)
+#6 /var/www/html/MusicReview/lib/Cake/Model/Datasource/DboSource.php(595): Model->find('first', Array)
+#7 /var/www/html/MusicReview/lib/Cake/Model/Model.php(827): DboSource->query('findByrecord_Id', Array, Object(Listen))
+#8 /var/www/html/MusicReview/app/Controller/RecordsController.php(36): Model->__call('findByrecord_Id', Array)
+#9 /var/www/html/MusicReview/app/Controller/RecordsController.php(36): Listen->findByrecord_Id('1')
+#10 [internal function]: RecordsController->view('1')
+#11 /var/www/html/MusicReview/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(RecordsController), Array)
+#12 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 /var/www/html/MusicReview/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RecordsController), Object(CakeRequest))
+#14 /var/www/html/MusicReview/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}

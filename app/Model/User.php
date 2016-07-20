@@ -12,7 +12,9 @@ class User extends AppModel{
     ]
   ];
 
-  public $hasMany =['Listen' => ['className' => 'Listen']];
+  public $hasMany =[
+    'Listen' => ['className' => 'Listen']
+  ];
 
   public $validate =[
     'email' => [

@@ -18,3 +18,9 @@
     </tbody>
   </table>
 </div>
+<span>このユーザが聴いた作品</span>
+<?php if(!$message == '0') :?>
+  <p><?= $message; ?></p>
+<?php else :?>
+
+<?php endif; ?>

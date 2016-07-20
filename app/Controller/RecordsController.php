@@ -2,6 +2,8 @@
 
 class RecordsController extends AppController{
 
+  public $uses = ['Record', 'Listen', 'User'];
+
   public function beforeFilter(){
     parent::beforeFilter();
 
@@ -18,12 +20,32 @@ class RecordsController extends AppController{
     $this->set('records', $this->Paginator->paginate());
   }//indexここまで
 
+
+
   public function view($id = null) {
     if(!$this->Record->exists($id)){
       throw new NotFoundException('作品が見つかりません');
     }
+
+    $flag = '0';
+    if($this->Auth->user() && $this->Listen->getData($id, $this->Auth->user('id'))){
+      $flag = '1';
+    }
+
+    $message = 'この作品を聴いたユーザはいません';
+    if($this->Listen->findByrecord_id($id)){
+      $message = '0';
+    }
+
+    $this->set('message', $message);
+    $this->set('flag', $flag);
     $this->set('record', $this->Record->findById($id));
   }//viewここまで
+
+
+
+
+
 
   public function add() {
     if($this->request->is('post')){
@@ -34,6 +56,7 @@ class RecordsController extends AppController{
       }
     }
   }//addここまで
+
 
   public function edit($id = null) {
     if(!$this->Record->exists($id)){

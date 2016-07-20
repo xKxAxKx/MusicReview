@@ -1,5 +1,5 @@
 <div>
-  <span>作品詳細</span>
+  <h2>作品詳細</h2>
   <table>
     <tbody>
     <tr>
@@ -28,5 +28,23 @@
         ['confirm' => '本当に削除してよろしいですか?']
       ); ?>
     </div>
+    <?php if($flag == '1') :?>
+      <div style="text-align:right;">
+        <?= $this->Form->postLink('作品を聴いていないことにする',
+        ['controller'=> 'listens', 'action' => 'delete', 'record_id' => $record['Record']['id']]); ?>
+      </div>
+    <?php else :?>
+      <div style="text-align:right;">
+        <?= $this->Form->postLink('作品を聴いた',
+        ['controller'=> 'listens', 'action' => 'add', 'record_id' => $record['Record']['id']]); ?>
+      </div>
+    <?php endif; ?>
   <?php endif; ?>
 </div>
+<hr>
+<span>この作品を聴いたユーザ</span>
+<?php if(!$message == '0') :?>
+  <p><?= $message; ?></p>
+<?php else :?>
+
+<?php endif; ?>

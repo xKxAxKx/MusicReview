@@ -4,18 +4,26 @@ class UsersController extends AppController{
 
   public $helpers = ['User'];
 
+  public $uses = ['User', 'Listen', 'Record'];
+
   public function beforeFilter(){
     parent::beforeFilter();
 
     $this->Auth->allow('signup');
   }
 
-  public function view($id =null){
+  public function view($id = null){
     if(!$this->User->exists($id)){
       throw new NotFoundException('登録されていないユーザです');
     } else{
+      $message = 'まだ何も聴いていません';
+      if($this->Listen->findByuser_id($id)){
+        $message = '0';
+      }
+      $this->set('message', $message);
       $this->set('user', $this->User->findById($id));
     }
+
 
   }
 
