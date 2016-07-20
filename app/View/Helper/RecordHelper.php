@@ -4,7 +4,7 @@ class RecordHelper extends AppHelper{
 
   public $helpers = ['Html'];
 
-  public function photoImage($record, $options =[]){
+  public function photoImageRecord($record, $options =[]){
 
     $photoDir = Configure::read('Record_Photo.dir');
     $defaultPhoto = Configure::read('Record_Photo.default');

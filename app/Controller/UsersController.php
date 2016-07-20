@@ -2,7 +2,7 @@
 
 class UsersController extends AppController{
 
-  public $helpers = ['User'];
+  public $helpers = ['User', 'Record'];
 
   public $uses = ['User', 'Listen', 'Record'];
 
@@ -17,8 +17,14 @@ class UsersController extends AppController{
       throw new NotFoundException('登録されていないユーザです');
     } else{
       $message = 'まだ何も聴いていません';
-      if($this->Listen->findByuser_id($id)){
+
+      $Listen_list = $this->Listen->find('all',  ['conditions' => ['user_id' => $id]]);
+      if($Listen_list){
         $message = '0';
+
+        $record_ids = Hash::extract($Listen_list, '{n}.Listen.record_id');
+        $this->Record->recursive = -1;
+        $this->set('records', $this->Record->find('all', ['conditions' => ['id' => $record_ids]]));
       }
       $this->set('message', $message);
       $this->set('user', $this->User->findById($id));

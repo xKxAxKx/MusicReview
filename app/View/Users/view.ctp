@@ -4,7 +4,7 @@
     <tbody>
     <tr>
       <td>
-      <?= $this->User->photoImage($user, ['style' => 'width:100%']) ;?>
+      <?= $this->User->photoImageUser($user, ['style' => 'width:100%']) ;?>
       </td>
     </tr>
     <tr>
@@ -18,9 +18,15 @@
     </tbody>
   </table>
 </div>
-<span>このユーザが聴いた作品</span>
+<p>このユーザが聴いた作品</p>
 <?php if(!$message == '0') :?>
   <p><?= $message; ?></p>
 <?php else :?>
-
+  <?php foreach ($records as $record) :?>
+    <?= $this->Html->link(
+      $this->Record->photoImageRecord($record, ['style' => 'width:100px']),
+      ['controller' => 'records', 'action' => 'view', $record['Record']['id']],
+      ['escape' => false]
+    );?>
+  <?php endforeach; ?>
 <?php endif; ?>

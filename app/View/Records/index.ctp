@@ -6,7 +6,7 @@
       <tr>
         <td style="width: 10%">
           <?= $this->Html->link(
-            $this->Record->photoImage($record, ['style' => 'width:100%']),
+            $this->Record->photoImageRecord($record, ['style' => 'width:100%']),
             ['action' => 'view', $record['Record']['id']],
             ['escape' => false]
           );?>

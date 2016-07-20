@@ -4,7 +4,7 @@ class UserHelper extends AppHelper{
 
   public $helpers = ['Html'];
 
-  public function photoImage($user, $options =[]){
+  public function photoImageUser($user, $options =[]){
 
     $photoDir = Configure::read('Icon_Photo.dir');
     $defaultPhoto = Configure::read('Icon_Photo.default');

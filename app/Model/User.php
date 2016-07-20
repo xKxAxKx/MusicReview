@@ -16,6 +16,15 @@ class User extends AppModel{
     'Listen' => ['className' => 'Listen']
   ];
 
+  public function getUser($id, $listen_id){
+    $options = [
+      'conditions' => [
+        
+      ]
+    ];
+
+  }
+
   public $validate =[
     'email' => [
       'required' => [

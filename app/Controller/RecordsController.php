@@ -10,7 +10,7 @@ class RecordsController extends AppController{
     $this->Auth->allow('index', 'view');
   }
 
-  public $helpers = ['Record'];
+  public $helpers = ['Record', 'User'];
 
   public $components = [
     'Paginator' => ['limit' => 5, 'order' => ['artist' =>'asc']]
@@ -33,8 +33,13 @@ class RecordsController extends AppController{
     }
 
     $message = 'この作品を聴いたユーザはいません';
-    if($this->Listen->findByrecord_id($id)){
+    $Listen_list = $this->Listen->find('all',  ['conditions' => ['record_id' => $id]]);
+    if($Listen_list){
       $message = '0';
+
+      $user_ids = Hash::extract($Listen_list, '{n}.Listen.user_id');
+      $this->User->recursive = -1;
+      $this->set('users', $this->User->find('all', ['conditions' => ['id' => $user_ids]]));
     }
 
     $this->set('message', $message);
