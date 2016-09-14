@@ -1,11 +1,16 @@
-<h2>ログイン</h2>
+<h2>ログインする</h2>
 
-<div>
+
+<div class="container">
   <?= $this->Flash->render('Auth');?>
   <?= $this->Form->create('User');?>
-  <fieldset>
-    <?= $this->Form->input('email', ['label' => 'メールアドレス']); ?>
-    <?= $this->Form->input('password', ['label' => 'パスワード']); ?>
-  </fieldset>
-  <?= $this->Form->end('ログイン'); ?>
+  <form class="form-horizontal">
+    <div class="form-group">
+      <?= $this->Form->input('email', ['label' => 'mail adress', 'class' => 'form-control']); ?>
+    </div>
+    <div class="form-group">
+      <?= $this->Form->input('password', ['label' => 'password', 'class' => 'form-control']); ?>
+    </div>
+      <?= $this->Form->submit('ログイン', ['class' => 'btn btn-primary']); ?>
+  </form>
 </div>

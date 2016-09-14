@@ -15,6 +15,23 @@
       <td>アーティスト名</td>
       <td><?= $record['Record']['artist']; ?></td>
     </tr>
+    <tr>
+      <?php if($flag == '1') :?>
+        <td>
+          <button type="button" class="btn btn-info" disabled="disabled">
+            <?= $this->Form->postLink('作品を聴いてない',
+            ['controller'=> 'listens', 'action' => 'delete', 'record_id' => $record['Record']['id'], 'style' => 'color:white;']); ?>
+          </button>
+        </td>
+      <?php else :?>
+        <td>
+          <button type="button" class="btn btn-info active">
+            <?= $this->Form->postLink('作品を聴いた',
+            ['controller'=> 'listens', 'action' => 'add', 'record_id' => $record['Record']['id'], 'style' => 'color:white;']); ?>
+          </button>
+        </td>
+      <?php endif; ?>
+    </tr>
     </tbody>
   </table>
   <?php if($currentUser) :?>
@@ -28,7 +45,8 @@
         ['confirm' => '本当に削除してよろしいですか?']
       ); ?>
     </div>
-    <?php if($flag == '1') :?>
+
+    <!-- <?php if($flag == '1') :?>
       <div style="text-align:right;">
         <?= $this->Form->postLink('作品を聴いていないことにする',
         ['controller'=> 'listens', 'action' => 'delete', 'record_id' => $record['Record']['id']]); ?>
@@ -39,7 +57,8 @@
         ['controller'=> 'listens', 'action' => 'add', 'record_id' => $record['Record']['id']]); ?>
       </div>
     <?php endif; ?>
-  <?php endif; ?>
+  <?php endif; ?> -->
+
 </div>
 <hr>
 <p>この作品を聴いたユーザ</p>

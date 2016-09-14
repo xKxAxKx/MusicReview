@@ -13,10 +13,11 @@ class RecordsController extends AppController{
   public $helpers = ['Record', 'User'];
 
   public $components = [
-    'Paginator' => ['limit' => 5, 'order' => ['artist' =>'asc']]
+    'Paginator' => ['limit' => 12, 'order' => ['artist' =>'asc']]
   ];
 
   public function index(){
+
     $this->set('records', $this->Paginator->paginate());
   }//indexここまで
 
