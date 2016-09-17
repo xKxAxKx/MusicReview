@@ -50,14 +50,14 @@ class RecordsController extends AppController{
 
 
 
-
+// $this->Session->setFlash('フラッシュメッセージだよ！', 'default', array('class'=> 'alert alert-success'));
 
 
   public function add() {
     if($this->request->is('post')){
       $this->Record->create();
       if($this->Record->save($this->request->data)) {
-        $this->Flash->success('作品を登録しました');
+        $this->Flash->success('作品を登録しました', 'default', ['class' => ['alert', 'alert-success']]);
         return $this->redirect(['action' => 'index']);
       }
     }
@@ -71,7 +71,7 @@ class RecordsController extends AppController{
 
     if($this->request->is(['post','put'])) {
       if($this->Record->save($this->request->data)) {
-        $this->Flash->success('作品を更新しました');
+        $this->Flash->success('作品を更新しました', 'default', ['class' => ['alert', 'alert-success']]);
         return $this->redirect(['action' => 'index']);
       }
     } else {

@@ -9,7 +9,7 @@ class UsersController extends AppController{
   public function beforeFilter(){
     parent::beforeFilter();
 
-    $this->Auth->allow('signup');
+    $this->Auth->allow('signup', 'view');
   }
 
   public function view($id = null){

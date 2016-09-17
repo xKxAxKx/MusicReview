@@ -12,6 +12,9 @@
     <!-- Bootstrap -->
 	<?php echo $this->Html->css('bootstrap.min'); ?>
 	<?php echo $this->Html->css('bootstrap-responsive.min'); ?>
+    <?php echo $this->Html->css('4-col-portfolio'); ?>
+
+
 	<!-- Le styles -->
 	<style>
     /*.starter-template {

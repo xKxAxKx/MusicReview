@@ -37,7 +37,7 @@ class AppController extends Controller {
   'Form' => array('className' => 'TwitterBootstrap.BootstrapForm'),
   'Paginator' => array('className' => 'TwitterBootstrap.BootstrapPaginator'),
   );
-  
+
   public $layout = 'TwitterBootstrap.default';
 
   public function beforeFilter(){

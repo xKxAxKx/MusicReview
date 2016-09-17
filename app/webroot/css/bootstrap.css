@@ -12,11 +12,6 @@ html {
 body {
   margin: 0;
 }
-
-.record-index{
-  text-align: center;
-}
-
 article,
 aside,
 details,
@@ -1428,7 +1423,6 @@ ul ol,
 ol ol {
   margin-bottom: 0;
 }
-
 .list-unstyled {
   padding-left: 0;
   list-style: none;
@@ -1598,6 +1592,11 @@ pre code {
     width: 750px;
   }
 }
+
+.user-img{
+  margin-bottom: 10px;
+}
+
 @media (min-width: 992px) {
   .container {
     width: 970px;
@@ -4297,12 +4296,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     margin-left: -15px;
   }
 }
-
-.record-index li img{
-  width: 30%;
-  display: inline-block;
-  margin: 0 3% 5% 0;
-}
 .navbar-toggle {
   position: relative;
   float: right;
@@ -6766,6 +6759,4 @@ button.close {
     display: none !important;
   }
 }
-
-
 /*# sourceMappingURL=bootstrap.css.map */

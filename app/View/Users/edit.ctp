@@ -19,9 +19,11 @@
 
 <hr>
 <h4>アイコンの変更</h4>
-<span>現在のアイコン</span><p>
-<?= $this->User->photoImage_nouser($currentUser, ['style' => 'width:100px']) ;?>
 <div class="container">
+  <div>
+    <span>現在のアイコン</span><p>
+    <?= $this->User->photoImage_nouser($currentUser, ['style' => 'width:100px']) ;?>
+  </div>
   <?= $this->Form->create('User', ['type' => 'file']); ?>
   <form class="form-horizontal">
     <div class="form-group">
@@ -57,7 +59,7 @@
 <hr>
 <h4>ユーザ削除</h4>
 <p>一度アカウントを削除すると、二度と元に戻せません。十分ご注意ください。</p>
-<div>
+<div style="margin-bottom: 30px;">
   <button type="button" class="btn btn-danger">
   <?= $this->Form->postLink(
     'ユーザを削除する',
