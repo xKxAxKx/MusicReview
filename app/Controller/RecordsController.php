@@ -7,17 +7,19 @@ class RecordsController extends AppController{
   public function beforeFilter(){
     parent::beforeFilter();
 
-    $this->Auth->allow('index', 'view');
+    $this->Auth->allow('index', 'view', 'search');
   }
 
   public $helpers = ['Record', 'User'];
 
   public $components = [
+    'Search.Prg',
     'Paginator' => ['limit' => 12, 'order' => ['artist' =>'asc']]
   ];
 
-  public function index(){
+  public $presetVars = true;
 
+  public function index(){
     $this->set('records', $this->Paginator->paginate());
   }//indexここまで
 
@@ -94,5 +96,24 @@ class RecordsController extends AppController{
 
     return $this->redirect(['action' => 'index']);
   }//deleteここまで
+
+  public function search(){
+    $this->Prg->commonProcess();
+    $result = 0;
+
+    if($this->request->data){
+      $result = 1;
+      $passedArgs = $this->passedArgs;
+      $lists = $this->Record->find('all', ['conditions' => $this->Record->parseCriteria($this->passedArgs)]);
+      $this->set('lists', $lists);
+      // var_dump($passedArgs);
+      // exit;
+    } else {
+      $passedArgs = null;
+    }
+
+    $this->set('result', $result);
+
+  }//serachここまで
 
 }

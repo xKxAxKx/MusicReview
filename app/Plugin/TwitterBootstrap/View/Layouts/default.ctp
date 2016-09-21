@@ -12,7 +12,8 @@
     <!-- Bootstrap -->
 	<?php echo $this->Html->css('bootstrap.min'); ?>
 	<?php echo $this->Html->css('bootstrap-responsive.min'); ?>
-    <?php echo $this->Html->css('4-col-portfolio'); ?>
+  <?php echo $this->Html->css('4-col-portfolio'); ?>
+  <?php echo $this->Html->css('bootstrap-custom'); ?>
 
 
 	<!-- Le styles -->
@@ -45,6 +46,7 @@
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
 						<li><?= $this->Html->link('Music Review', '/'); ?></li>
+            <li><?= $this->Html->link('作品を検索する', '/Records/search'); ?></li>
 		        <?php if($currentUser) :?>
 		          <li><?= $this->Html->link('作品を追加する', '/Records/add'); ?></li>
 		        <?php endif; ?>

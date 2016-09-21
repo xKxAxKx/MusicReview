@@ -17,16 +17,16 @@
       <div class="panel-heading">
         <div class="panel-title">このユーザが聴いた音楽</div>
       </div>
-        <div class="panel-body">
+        <div class="panel-body" >
           <?php if(!$message == '0') :?>
             <?= $message; ?>
           <?php else :?>
             <?php foreach ($records as $record) :?>
-              <?= $this->Html->link(
-                $this->Record->photoImageRecord($record, ['style' => 'width:19%', 'class' => "user-img"]),
-                ['controller' => 'records', 'action' => 'view', $record['Record']['id']],
-                ['escape' => false]
-              );?>
+                <?= $this->Html->link(
+                  $this->Record->photoImageRecord($record, ['style' => 'width:19%; padding-bottom: 10px;', 'class' => "user-img relative"]),
+                  ['controller' => 'records', 'action' => 'view', $record['Record']['id']],
+                  ['escape' => false]
+                );?>
             <?php endforeach; ?>
           <?php endif; ?>
         </div>

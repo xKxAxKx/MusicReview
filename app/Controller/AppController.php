@@ -74,8 +74,9 @@ class AppController extends Controller {
         'action' => 'index'
       ],
 
-      'authError' => 'ログインしてください'   // ログインが必要なページにアクセスした時のメッセージ
+      'authError' => 'ログインしてください',   // ログインが必要なページにアクセスした時のメッセージ
     ]
   ];
+
 
 }

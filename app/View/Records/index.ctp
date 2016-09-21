@@ -2,17 +2,17 @@
   <div class="row">
     <ul>
       <?php foreach ($records as $record) :?>
-        <div class="col-md-3 portfolio-item">
-          <li class="img-responsive">
+        <div class="col-md-3 portfolio-item" style="padding-bottom: 20px;">
+          <li class="img-responsive relative">
               <?= $this->Html->link(
               $this->Record->photoImageRecord($record, ['style' => 'width:100%']),
               ['action' => 'view', $record['Record']['id']],
               ['escape' => false]
               );?>
-              <span style ="text-align:center">
-                <?= $this->Html->link($record['Record']['title'], ['action' => 'View', $record['Record']['id']]) ;?> /
-                <?= $this->Html->link($record['Record']['artist'], ['action' => 'View', $record['Record']['id']]) ;?>
-              </span>
+              <div class="absolute">
+                <?= $record['Record']['title']; ?><br>
+                <?= $record['Record']['artist']; ?>
+              </div>
           </li>
         </div>
       <?php endforeach;?>

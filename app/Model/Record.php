@@ -2,6 +2,7 @@
 
 class Record extends AppModel{
   public $actsAs =[
+    'Search.Searchable',//serachプラグインの実装
     'Upload.Upload' => [
       'record_photo' => [
         'fields' => ['dir' => 'record_photo_dir'],
@@ -10,12 +11,20 @@ class Record extends AppModel{
     ]
   ];
 
+  //Searchのフィルター
+  public $filterArgs = [
+      'keyword' => ['type' => 'like', 'field' => ['Record.title', 'Record.artist']]
+  ];
+
   public $hasMany =['Listen' => ['className' => 'Listen']];
 
   public $validate = [
     //edit、addのバリデーション対応
     'title' => ['rule' => ['notBlank']],
     'artist' => ['rule' => ['notBlank']],
+
+    //searchのバリデーション対応
+    'keyword' => ['rule' => ['notBlank']],
 
     //画像関係のバリデーション
     'record_photo' =>[

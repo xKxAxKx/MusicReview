@@ -1,0 +1,11 @@
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+  bottom: 0px;
+  color: #fff;
+  background: rgba(0,0,0,.6);
+  width: 100%;
+  text-align:center;
+}

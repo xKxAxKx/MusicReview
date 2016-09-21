@@ -12,6 +12,20 @@ html {
 body {
   margin: 0;
 }
+
+li .relative {
+    position: relative;
+}
+p .absolute {
+  position: absolute;
+  bottom: 80px;
+  color: #fff;
+  background: rgba(0,0,0,.6);
+  width: 100%;
+  max-width: 600px;
+  padding: 1em 0;
+}
+
 article,
 aside,
 details,
@@ -6759,4 +6773,5 @@ button.close {
     display: none !important;
   }
 }
+
 /*# sourceMappingURL=bootstrap.css.map */
